@@ -1,0 +1,148 @@
+body{
+    background-color: black;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    color: white;
+}
+
+div{
+    padding: 5px;
+}
+/* Aqui alinhei o header */
+.tittle{
+    text-align: center;
+    align-items: center;
+ 
+   
+}
+
+
+
+/* Coloquei pra dar mais personalidade, mesmo que não seja igual a versão verdadeira do github*/
+.tittle:hover{
+    text-shadow: 2px 2px 4px rgba(131, 200, 200, 0.7); /* sombra um pouco azulada meio branca, pra dar luz*/
+}
+/*Também queria que o icon tivesse vida, e coloquei ele pra girar, dando personalidade*/
+.icon:hover{
+  transform: rotate(360deg);
+transition: transform 0.6s ease;
+
+}
+
+.none {
+  list-style: none;    /* Remove os marcadores/bullets da lista */
+  padding-left: 0;     /* Remove o recuo/padding esquerdo padrão */
+  margin: 0;           /* Remove as margens padrão */
+}
+
+/* Estilizando o fieldset */
+fieldset {
+    width: 90%; /* Ajuste a largura do fieldset conforme necessário */
+    max-width: 400px; /* Limita a largura máxima para não ficar muito grande */
+    margin: 0 auto; /* Centraliza o fieldset na página */
+    padding: 20px; /* Adiciona um pouco de espaço interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    border:1px solid #272727;
+    background-color:  #161b22; /* Cor de fundo do fieldset */
+   
+    box-shadow: 0 0 10px rgba(218, 214, 214, 0.5);}
+
+  /* Inputs estilo GitHub */
+input[type="text"],
+input[type="password"] {
+  background-color: #1a212b;
+  color: rgb(248, 248, 248);
+  border: 1px solid #30363d;
+  padding: 10px;
+  width: 95%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  
+}
+/* Usei para deixar ele no canto esquerdo e na mesma altura que senha */
+#togglePassword{
+  position: relative;
+  cursor:pointer;
+  left: 370px;
+  bottom: 45px;
+
+}
+
+
+/* Botão estilo GitHub */
+button {
+  background-color: #164e23;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+/*quando passar o mouse em cima, ele vai ficar verde claro com as bordas meio branca, dando vida ao botão*/
+button:hover{
+  background-color: #02a30d ;
+  box-shadow: 0 0 10px rgba(99, 128, 99, 0.5);
+}
+
+
+/* A posição estava muito para a esquerda, assim eu consigo deixar ele no canto da direita, discreto*/
+.forgot-password{
+  position: relative;
+  left: 200px;
+
+}
+
+/*rodapé estava muito grudado no fieldest, dei um espaço para ficar visualmente mais organizado e bonito*/
+.footer{
+  padding: 5px;
+}
+
+
+/* DEIXAR OS MEDIAS QUERYS AQUI EMBAIXO EXPLICADOS*/
+/* Media Queries para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+  body {
+      margin-top: 40px;
+      margin-bottom: 40px;
+  }
+  
+  fieldset {
+      width: 85%;
+      padding: 15px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+      width: 92%;
+  }
+  
+  #togglePassword {
+    left: 85%;
+    bottom: 45px;
+}
+  
+  .forgot-password {
+      left: 70%;
+      bottom: 3px;
+      transform: translateX(-50%);
+     text-align: center;
+      display: block;
+      width:100%;
+      
+      margin-top: -15px;
+      margin-bottom: 15px;
+     
+  }
+  
+  button {
+      padding: 12px;
+  }
+}
+
